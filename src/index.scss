@@ -32,3 +32,42 @@ code {
     }
   }
 }
+
+.ui.form {
+  .field {
+    .input {
+      input {
+        background: $background-grey-light;
+        font-size: 16px;
+        color: $font-light;
+        border: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $background-grey-light-hover;
+          color: $font-light;
+          border: 0;
+        }
+      }
+
+      i {
+        color: $font-light;
+      }
+    }
+  }
+
+  .ui.button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: $primary-color;
+    color: $font-light;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+  }
+}

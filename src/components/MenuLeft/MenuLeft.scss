@@ -1,0 +1,37 @@
+@import "../../scss/index.scss";
+
+.ui.menu.vertical.menu-left {
+  display: flex;
+  justify-content: space-between !important;
+  border-radius: 0;
+  background-color: $background-grey-dark;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+
+  .item,
+  a.item {
+    color: $font-grey;
+    font-weight: bold;
+    font-size: 16px;
+    border-left: 4px solid transparent;
+    width: 100%;
+
+    &:hover,
+    &.active {
+      color: $font-light !important;
+      background-color: transparent !important;
+      cursor: pointer;
+    }
+    &.active {
+      border-color: $primary-color;
+    }
+  }
+
+  .footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+}

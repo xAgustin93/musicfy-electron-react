@@ -1,0 +1,38 @@
+@import "../../../scss/index.scss";
+
+.basic-slider-items {
+  margin: 50px 0;
+
+  > h2 {
+    border-bottom: 1px solid $boder-grey-light;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    .slick-prev {
+      left: -35px;
+    }
+    .slick-next {
+      right: -35px;
+    }
+
+    &-item {
+      padding: 20px;
+
+      .avatar {
+        height: 160px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      > h3 {
+        color: $font-grey;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}

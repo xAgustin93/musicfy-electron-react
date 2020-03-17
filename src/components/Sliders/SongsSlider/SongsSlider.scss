@@ -1,12 +1,11 @@
 @import "../../../scss/index.scss";
 
-.basic-slider-items {
+.songs-slider {
   margin: 50px 0;
 
   > h2 {
     border-bottom: 1px solid $border-grey-light;
     padding-bottom: 10px;
-    margin-bottom: 20px;
   }
 
   &__list {
@@ -17,7 +16,7 @@
       right: -35px;
     }
 
-    &-item {
+    &-song {
       padding: 20px;
 
       .avatar {
@@ -26,11 +25,32 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          cursor: pointer;
+          i {
+            opacity: 1;
+          }
+        }
+
+        i {
+          width: 100%;
+          opacity: 0;
+          transition: opacity 0.25s ease-in-out;
+
+          &:before {
+            font-size: 50px;
+            color: $font-light;
+          }
+        }
       }
 
-      > h3 {
+      h3 {
         color: $font-grey;
-        margin-top: 10px;
+        margin-top: 10px !important;
         font-size: 16px;
       }
     }

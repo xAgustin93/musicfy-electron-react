@@ -70,4 +70,24 @@ code {
       background-color: $primary-color-hover;
     }
   }
+
+  .ui.dropdown {
+    background-color: $background-grey-light;
+    font-size: 16px;
+    color: $font-light;
+    border: 0;
+
+    .search {
+      color: $font-light;
+    }
+
+    .menu {
+      background-color: $background-grey-light;
+      border: 0;
+      .item {
+        border-color: $border-light-dark;
+        color: $font-light;
+      }
+    }
+  }
 }

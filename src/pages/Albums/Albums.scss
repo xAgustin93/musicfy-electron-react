@@ -1,0 +1,29 @@
+@import "../../scss/index.scss";
+
+.albums {
+  margin: 50px;
+
+  > h1 {
+    border-bottom: 1px solid $border-grey-light;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+
+  &__item {
+    text-align: center;
+
+    .avatar {
+      height: 150px;
+      width: 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+    }
+
+    h3 {
+      color: $font-grey;
+    }
+  }
+}

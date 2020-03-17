@@ -4,6 +4,8 @@ import { Link, withRouter } from "react-router-dom";
 import { isUserAdmin } from "../../utils/Api";
 import BasicModal from "../Modal/BasicModal";
 import AddArtistForm from "../Artists/AddArtistForm";
+import AddAlbumForm from "../Albums/AddAlbumForm";
+import AddSongForm from "../Songs/AddSongForm";
 
 import "./MenuLeft.scss";
 
@@ -36,9 +38,14 @@ function MenuLeft(props) {
         setContentModal(<AddArtistForm setShowModal={setShowModal} />);
         setShowModal(true);
         break;
+      case "album":
+        setTitleModal("Nuevo álbum");
+        setContentModal(<AddAlbumForm setShowModal={setShowModal} />);
+        setShowModal(true);
+        break;
       case "song":
         setTitleModal("Nueva canción");
-        setContentModal(<h2>Formulario nueva canción</h2>);
+        setContentModal(<AddSongForm setShowModal={setShowModal} />);
         setShowModal(true);
         break;
       default:
@@ -67,13 +74,24 @@ function MenuLeft(props) {
             active={activeMenu === "/artists"}
             onClick={handlerMenu}
           >
-            <Icon name="music" /> Artistas
+            <Icon name="user" /> Artistas
+          </Menu.Item>
+          <Menu.Item
+            as={Link}
+            to="/albums"
+            active={activeMenu === "/albums"}
+            onClick={handlerMenu}
+          >
+            <Icon name="window maximize outline" /> Álbumes
           </Menu.Item>
         </div>
         {userAdmin && (
           <div className="footer">
             <Menu.Item onClick={() => handlerModal("artist")}>
               <Icon name="plus square outline" /> Nuevo Artista
+            </Menu.Item>
+            <Menu.Item onClick={() => handlerModal("album")}>
+              <Icon name="plus square outline" /> Nuevo Álbum
             </Menu.Item>
             <Menu.Item onClick={() => handlerModal("song")}>
               <Icon name="plus square outline" /> Nueva Canción

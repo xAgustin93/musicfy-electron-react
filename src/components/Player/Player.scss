@@ -1,0 +1,78 @@
+@import "../../scss/index.scss";
+
+.player {
+  position: relative;
+  height: 100%;
+  background-color: $background-greu-medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .ui.grid {
+    width: 100%;
+    margin: 0;
+  }
+
+  .left {
+    display: flex !important;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    img {
+      width: 60px;
+      margin-right: 20px;
+    }
+  }
+
+  .center {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+
+    .controls {
+      margin-bottom: 10px;
+
+      i {
+        font-size: 30px !important;
+        margin: 0 !important;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .ui.progress {
+      width: 100%;
+      margin: 0;
+
+      .bar {
+        min-width: 0%;
+        .progress {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+
+    .ui.input {
+      i {
+        color: $font-grey;
+        margin-right: 15px;
+      }
+      input {
+        width: 120px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

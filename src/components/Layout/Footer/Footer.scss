@@ -1,0 +1,47 @@
+@import "~/src/scss/index";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 20px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+    .ui.image {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+
+  &__center {
+    width: 60%;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+
+    .ui.input {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 150px;
+      }
+
+      i.icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10px !important;
+      }
+    }
+  }
+}

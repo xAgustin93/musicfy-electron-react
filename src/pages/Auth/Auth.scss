@@ -1,0 +1,22 @@
+@import "~/src/scss/index";
+
+.auth {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/jpg/background-auth.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 500px;
+    border-radius: 10px;
+    background-color: $background-primary;
+    padding: 50px 70px;
+
+    &-logo {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}

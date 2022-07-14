@@ -1,0 +1,44 @@
+@import "~/src/scss/index";
+
+.slider {
+  .slider__item {
+    padding: 0 10px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 100;
+      color: $font-light;
+    }
+
+    &-block-play {
+      position: relative;
+      &:hover {
+        > i.icon {
+          display: flex;
+        }
+      }
+
+      > i.icon {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 35px;
+        background-color: #000;
+        opacity: 0.7;
+      }
+    }
+  }
+}

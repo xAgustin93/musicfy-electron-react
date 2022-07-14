@@ -1,0 +1,26 @@
+@import "~/src/scss/index";
+
+.new-artist-form {
+  &__banner {
+    height: 170px;
+    background-color: $background-secondary;
+    margin-bottom: 20px;
+
+    &.error {
+      border: 1px solid $danger;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .ui.image {
+      height: 100%;
+      margin: 0 auto;
+
+      &.full {
+        width: 100%;
+      }
+    }
+  }
+}

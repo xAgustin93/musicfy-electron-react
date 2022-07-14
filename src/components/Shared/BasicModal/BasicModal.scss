@@ -1,0 +1,23 @@
+@import "~/src/scss/index";
+
+.basic-modal {
+  background-color: $background-primary !important;
+  border-radius: 15px !important;
+
+  .header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent !important;
+    padding: 10px 5px !important;
+    border-bottom: 0 !important;
+
+    > span {
+      font-size: 18px;
+    }
+  }
+
+  .content {
+    background-color: transparent !important;
+  }
+}

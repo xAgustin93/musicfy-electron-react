@@ -1,0 +1,70 @@
+@import "~/src/scss/index";
+
+.login-form {
+  margin-top: 50px;
+
+  h1 {
+    color: $font-light;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  .ui.form {
+    .field {
+      .input {
+        margin-bottom: 5px;
+
+        input {
+          font-size: 16px;
+        }
+
+        i {
+          font-size: 19px;
+        }
+      }
+
+      &.error {
+        .input {
+          input {
+            box-shadow: 0px 0px 0px 1px $danger;
+          }
+        }
+      }
+
+      .button {
+        text-transform: uppercase;
+        margin-top: 10px;
+        padding: 17px 0;
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  &__options {
+    margin-top: 50px;
+    color: $font-light;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    p {
+      &:first-of-type {
+        margin-bottom: 40px;
+        cursor: pointer;
+      }
+
+      &:last-of-type {
+        color: $font-grey;
+
+        span {
+          text-decoration: underline;
+          padding-left: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

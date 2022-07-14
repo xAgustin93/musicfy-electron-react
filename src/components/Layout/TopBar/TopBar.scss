@@ -1,0 +1,33 @@
+@import "~/src/scss/index";
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+
+  &__back {
+    font-size: 20px !important;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    .ui.image.avatar {
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    i {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-top: 2px;
+      margin-left: 10px;
+    }
+  }
+}

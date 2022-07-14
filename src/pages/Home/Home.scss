@@ -1,0 +1,24 @@
+@import "~/src/scss/index";
+
+.home-page {
+  &__banner {
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__slider {
+    margin: 50px;
+
+    > h2 {
+      color: $font-grey;
+      font-weight: 100;
+      font-size: 22px;
+      border-bottom: 0.5px solid;
+      padding-bottom: 8px;
+      margin-bottom: 30px;
+    }
+  }
+}
